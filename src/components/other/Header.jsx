@@ -13,9 +13,9 @@ const Header = (props) => {
     if(props.data){
       setUserName(props.data.firstName)
     }else{
-      ("admin")
+      setUserName("admin")
     }
- })
+ },[userName])
 
   return (
     <div className='flex items-end justify-between'>

@@ -8,8 +8,6 @@ const Login = ({handleLogin}) => {
     const submitHandler = (e) => {
         e.preventDefault()
         handleLogin(email , password)
-        // console.log("email is" , email)
-        // console.log("password is" , password)
         setEmail("")
         setPassword("")
     }
@@ -17,7 +15,7 @@ const Login = ({handleLogin}) => {
   return (
     <div className='flex h-screen w-screen items-center justify-center'>
         
-        <div className='border-2 bg-[#1c1c1c]  border-white px-20 rounded-xl'>
+        <div className='border-2 bg-[#1c1c1c]  border-white px-8 sm:px-20 rounded-xl'>
             <form 
             onSubmit={(e) => {
                 submitHandler(e)

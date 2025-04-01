@@ -12,7 +12,7 @@ const AuthProvider = ({ children }) => {
         setLocalStorage()
         const storedData = getLocalStorage() || {};
         const { employees = null} = storedData;
-        setUserData({ employees});
+        setUserData(employees);
     }, []);
 
     return (
