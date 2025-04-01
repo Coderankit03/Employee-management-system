@@ -19,9 +19,18 @@ function App() {
       const parsedUser = JSON.parse(loggedInUser); // Parse correctly
   
       setUser(parsedUser.role); // Correctly setting user role
-        setLoggedInUserData(parsedUser.data); // Ensure to pass correct employee data
+      setLoggedInUserData(parsedUser.data); // Ensure to pass correct employee data
     }
   }, []);
+
+try {
+  if(user==null){
+    throw new error("user not found clering storage")
+  }
+} catch (e) {
+  localStorage.clear(); // Clear only if absolutely necessary
+}
+
   
 
   // const handleLogin = (email, password) => {

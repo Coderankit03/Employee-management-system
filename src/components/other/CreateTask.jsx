@@ -171,11 +171,11 @@ const CreateTask = () => {
         <div className="sm:w-1/2 space-y-4">
           {/** Task Title */}
           <div>
-            <label className="text-gray-400 text-sm">Task Title</label>
+            <label className="text-white text-sm">Task Title</label>
             <input
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full px-3 py-2 bg-[#121212]  border border-gray-600 text-gray-300 rounded-md outline-none  focus:border-highlight  transition"
+              className="w-full px-3 py-2 bg-[#121212]  border focus:border-white border-gray-600 text-gray-300 rounded-md outline-none  focus:border-highlight  transition"
               type="text"
               placeholder="e.g. Design a UI"
             />
@@ -183,22 +183,22 @@ const CreateTask = () => {
 
           {/** Task Date */}
           <div>
-            <label className="text-gray-400 text-sm">Date</label>
+            <label className="text-white text-sm">Date</label>
             <input
               value={taskDate}
               onChange={(e) => setTaskDate(e.target.value)}
-              className="w-full px-3 py-2 bg-[#121212] border border-gray-600 text-gray-300 rounded-md outline-none  focus:border-highlight transition"
+              className="w-full px-3 py-2 bg-[#121212] border border-gray-600 focus:border-white text-gray-300 rounded-md outline-none  focus:border-highlight transition"
               type="date"
             />
           </div>
 
           {/** Assign To */}
           <div>
-            <label className="text-gray-400 text-sm">Assign To</label>
+            <label className="text-white text-sm">Assign To</label>
             <input
               value={asignTo}
               onChange={(e) => setAsignTo(e.target.value)}
-              className="w-full px-3 py-2 bg-[#121212] border border-gray-600 text-gray-300 rounded-md outline-none  focus:border-highlight transition"
+              className="w-full px-3 py-2 bg-[#121212] border border-gray-600 text-white focus:border-white rounded-md outline-none  focus:border-highlight transition"
               type="text"
               placeholder="Employee name"
             />
@@ -206,11 +206,11 @@ const CreateTask = () => {
 
           {/** Category */}
           <div>
-            <label className="text-gray-400 text-sm">Category</label>
+            <label className="text-white text-sm">Category</label>
             <input
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="w-full px-3 py-2 bg-[#121212] border border-gray-600 text-gray-300 rounded-md outline-none  focus:border-highlight transition"
+              className="w-full px-3 py-2 bg-[#121212] border border-gray-600 text-whiet focus:border-white rounded-md outline-none  focus:border-highlight transition"
               type="text"
               placeholder="Design, Development, etc."
             />
@@ -219,16 +219,16 @@ const CreateTask = () => {
 
         {/** Description & Submit Button */}
         <div className="sm:w-2/5 flex flex-col ">
-          <label className="text-gray-400 mt-2 text-sm">Description</label>
+          <label className="text-white mt-2 text-sm">Description</label>
           <textarea
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            className="w-full h-36 px-3 py-2 bg-[#121212] border border-gray-600 text-gray-300 rounded-md outline-none focus:border-highlight transition"
+            className="w-full h-36 px-3 py-2 bg-[#121212] border border-gray-600 text-white rounded-md outline-none focus:border-white transition"
             rows="5"
             placeholder="Task details..."
           ></textarea>
           
-          <button className="w-full py-2 bg-button text-[#1e1e1e] hover:bg-buttonHover hover:text-white rounded-md text-xl transition">
+          <button className="w-full py-2 bg-button text-white cursor-pointer border-1 mt-3 hover:bg-emerald-500 bg-[#1c1c1c] hover:border-emerald-500 rounded-md hover:scale-103 text-lg transition">
             Create Task
           </button>
         </div>
